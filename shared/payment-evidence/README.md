@@ -478,3 +478,60 @@ The pin is an unkeyed content commitment, not a signature. Provider timestamps,
 source labels and caller clock are trust inputs. Two URLs do not prove independent
 operators, and replay cannot prove current chain state, invoice provenance,
 account ownership, consent, payment deduplication or contract support.
+
+## Gathering 09: retained checkpoint and explained request changes
+
+`checkpoint_review.py` joins Line 3's paired settlement recheck with Line 4's
+value-level change reviewer and the previous exact evidence binding. Both a
+**baseline evidence digest** and a **request review pin** must have been retained
+independently before considering the candidate. They use different commitment
+schemes and are not interchangeable. Exact unchanged source copies and hashes
+are recorded in `provenance.json`.
+
+Run this historical ZTO demonstration from the repository root:
+
+```sh
+python3 -B shared/payment-evidence/checkpoint_review.py shared/payment-evidence/checkpoint-baseline.json shared/payment-evidence/paired-pinned-evidence.json shared/payment-evidence/paired-pinned-policy.json shared/payment-evidence/paired-pinned-intended.json shared/payment-evidence/paired-pinned-intended.json --baseline-pin dd94a4fb3ef241db9cffbf8ccb24b4486e0eea308b1c34a7e0668f6c92f90dd4 --request-pin 8122b8ba057657d449c42e1c0c857be88eda97aebb8c836b07b2cf3589e8316e --as-of 1792012453 --max-head-age 120 --max-finalized-age 1200 --future-skew 60
+```
+
+Observed exit 0, `checkpoint_and_pinned_request_match`. Both sampled provider
+heads advance from 26192482 to 26193361 while the selected ZTO payment events,
+execution and inclusion remain unchanged. Both later observations pass the
+explicit historical clock and age budgets. The intended request binds the exact
+later pair and caller payment policy; the captured candidate must match the
+retained request pin. A changed candidate produces precise before/after values,
+including decimal strings for integers too large for JavaScript numbers.
+An unchanged head is review-required even when its evidence remains fresh.
+
+The CLI checks the request pin before opening evidence or candidate files, then
+checks the retained baseline digest and independent policy before opening current
+evidence or the candidate. The Python `review` function enforces the same gates
+on supplied values. No baseline, pin or policy is updated automatically.
+
+The demo compares an intended request with itself and uses illustrative retained
+pins derived from inherited public examples. This proves execution, not prior
+approval, a real client capture, an invoice, or present freshness. For a real
+review supply independently selected payment/time policies, separately retained
+pins, reviewed intended data and a separately captured candidate. The earlier
+checkpoint has no timestamps and establishes no earlier wall-clock freshness.
+Different-height block ancestry is not proved. Source labels, observations,
+provider timestamps and caller time remain trusted; forged consistent evidence
+or replacing both content and its retained pin can pass.
+
+The entire `payment-evidence/` folder runs detached, with no line folders,
+network, package installation or environment access. POSIX and Python 3.10+
+are sufficient. Inputs are bounded regular files under the working directory,
+with no-follow path handling; the complete combined report is capped at 100 KB.
+Exit 0 means all comparison gates passed, 1 means review required, and 2 means
+invalid input or output bounds. No method is dispatched and nothing is signed.
+
+```sh
+python3 -B shared/payment-evidence/test_checkpoint_review.py
+```
+
+All 12 integration tests pass: historical acceptance, input immutability,
+one-unit and public-account changes, staleness, unchanged heads, still-settled
+but unbound evidence, replaced baseline, request pin before evidence access,
+baseline pin before current/candidate access, missing current input and output
+size. `gathering/check_round_09.py` also tests the detached folder and the newest
+Line 2 and Line 4 expected rejections.

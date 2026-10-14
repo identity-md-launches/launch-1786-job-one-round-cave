@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "source": "https://ethereum-rpc.publicnode.com",
+  "result": {
+    "status": "two_hash_pinned_reads_correlated_by_id",
+    "block_number": 26193694,
+    "block_hash": "0xaff1586e4e34239be25d580492d8355c4d8faadaf4a8168636cf8653b71570f8",
+    "zto_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+    "total_supply_raw": "1000000000000000000000000000",
+    "decimals": 18,
+    "total_supply_tokens": "1000000000.000000000000000000",
+    "batch_response_order": [
+      1,
+      2
+    ],
+    "transcript_sha256": "37576b10bfcaf35c1e49e00bcd5eee9a8ccd09503d75d7fec8180bd5268b10fd",
+    "evidence": "Provider observations, not an atomic read or state proof"
+  },
+  "savedBytes": 55741,
+  "mode": "one-shot live read, no polling"
+}

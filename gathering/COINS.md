@@ -1,8 +1,9 @@
 none
 
-The four worker goals work with public reads and offline checks. Their token
-examples use real ZTO first, with IMD supported second. A new coin and Uniswap
-v4 hook would add no necessary capability; no line needs its own coin.
+All four goals work through public Ethereum reads or offline computation.
+The shared checkpoint/request review also needs no new asset or Uniswap v4
+hook. Its real token examples use ZTO first; inherited payment checks support
+IMD second. Neither token needs replacement to make any current line exist.
 
-There is no contract to nominate for Sepolia. No coin order or deploy order is
-requested, and nothing was signed, sent, paid, posted or deployed.
+No coin is requested and no contract is ready to nominate for Sepolia.
+No coin order, deploy order, signing, payment, posting or deployment was made.

@@ -1,0 +1,27 @@
+{
+  "valid": true,
+  "offlineCommands": 87,
+  "testCasesEnumerated": 593,
+  "testCasesPassed": 592,
+  "testCasesSkipped": 1,
+  "skipReason": "An additional loopback server is outside the permitted local RPC endpoint.",
+  "extraTrials": 6,
+  "expectedRejectionsPassed": 2,
+  "detachedSharedBridgePassed": true,
+  "freshZtoBatchPassed": true,
+  "lineFoldersUnchanged": true,
+  "changedSourcePathsWithinScope": true,
+  "requiredPngUntracked": true,
+  "wallSha256": "2daa514aae24125f90df19455e61febb0880af5b01007fd14c8030a83f2a6b1e",
+  "wallDimensions": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG RGB",
+  "previewDimensions": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "unmetVisualRequirements": []
+}

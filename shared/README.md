@@ -53,3 +53,10 @@ independently retained review pin. It vendors the latest paired-freshness and
 review-pin pieces byte-for-byte. The historical ZTO demo and five integration
 tests run offline; neither the demo's pin nor its self-compared request is an
 independent approval or a real signing capture.
+
+Gathering 09 adds `payment-evidence/checkpoint_review.py`: recheck both providers
+against an independently retained baseline, require timely consistent progress,
+then bind the exact current pair to a pinned request and explain changed client
+values. Two byte-for-byte vendor copies, real historical ZTO inputs, 12 integration
+tests and a detached offline trial are included. See the payment bridge README
+for the command and the two different retained-pin schemes.

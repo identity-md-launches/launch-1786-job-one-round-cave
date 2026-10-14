@@ -1,0 +1,53 @@
+{
+  "ancestorSha256": "7b069edc370d8667b9d032de914d49c79d0b83b817c7e513b77179eecc48f037",
+  "ancestorSize": [
+    1254,
+    1254
+  ],
+  "wallSize": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "2daa514aae24125f90df19455e61febb0880af5b01007fd14c8030a83f2a6b1e",
+  "generatedDraftSha256": "85d94dfefa29a36746382ad895632a78db8feaf93d494f74713f6e8a4ddc337e",
+  "generatedDraftSize": [
+    1211,
+    1299
+  ],
+  "generatedDraftRetained": false,
+  "changedPixels": 15858,
+  "unchangedPixels": 1556658,
+  "changedPixelBounds": [
+    65,
+    380,
+    204,
+    579
+  ],
+  "additionRectangle": [
+    65,
+    380,
+    140,
+    200
+  ],
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewSize": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75884,
+  "previewQuality": 52,
+  "imageTool": "image_gen__imagegen",
+  "prompt": "Transparent prehistoric pigment drawing: recognizable heavy-lidded wide-mouthed Pepe head above a forked twig connecting two pairs of pebbles; broken charcoal, red and yellow ochre. No hands, text, frames, logos or modern rendering. Built-in imagegen pigment composited only on vacant ancestral stone.",
+  "reviewStatus": "visually inspected full PNG and decoded JPEG",
+  "unmetVisualRequirements": [],
+  "handsAndHandprints": "none in new mark or visible ancestral wall; no digits to count",
+  "visualReview": "Recognizable heavy-lidded wide-mouthed Pepe above forked twig and four pebbles. Earth pigments, rough torchlit rock, cracks, framing and all ancestors retained. No letters, numbers, captions, logos, watermarks, borders, real people or prohibited symbols observed.",
+  "ancestorRecord": "dist/gathering/08.json",
+  "finishedWall": "artifacts/gathering/wall-v9.png",
+  "preview": "dist/gathering/09.jpg",
+  "generationPrompt": "Use case: illustration-story. Generate a single isolated transparent-background prehistoric pigment drawing for adding to an existing cave wall. A small recognizable Pepe the frog head, big heavy-lidded eyes and broad flat mouth, simple uneven burnt-charcoal contours and sparse rusty red ochre thumb-rub fills, worn and partly broken strokes with plenty of transparent holes. Beneath his head, a forked twig joins two pairs of small pebbles, representing retained checkpoints compared across time. Compact upright composition. Earth pigments only: charcoal black, rusty red ochre and muted yellow ochre. No hands or arms, no handprints. No letters, numbers, captions, signature, logo, watermark, borders or frames. No background stone: genuine transparent background. No smooth digital cartoon shading, no photo, no 3D. This will be composited as a small new mark onto untouched vacant rock; ancestral marks will be kept pixel identical."
+}

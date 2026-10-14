@@ -1,41 +1,48 @@
-# Water gathering 08
+# Water gathering 09
 
-This round checks all four lines and adds a portable offline bridge between
-paired ZTO payment freshness and a previously reviewed EIP-712 request pin.
-`REPORT.md` gives each line's trials, working behavior, limits and goal scope;
-`COINS.md` says none. No line folder was changed.
+This round checks the four lines and adds a portable offline bridge between a
+retained paired ZTO payment checkpoint and a pinned, explained EIP-712 request.
+See `REPORT.md` for each line's working behavior, trials, limits and goal scope;
+`COINS.md` says none. All line folders remain byte-for-byte unchanged.
 
-Run the new shared piece from the repository root:
+The shared deliverable, its one-command historical demo and 12 integration tests
+are documented in [the payment bridge README](../shared/payment-evidence/README.md#gathering-09-retained-checkpoint-and-explained-request-changes).
+Copy the complete `shared/payment-evidence/` folder to use it without the lines,
+packages or network. Its two retained pins must be independently established;
+the saved demo pins and intended/client self-comparison are illustrative.
 
-```sh
-python3 -B shared/payment-evidence/paired_pinned_review.py shared/payment-evidence/paired-pinned-evidence.json shared/payment-evidence/paired-pinned-policy.json shared/payment-evidence/paired-pinned-intended.json shared/payment-evidence/paired-pinned-intended.json --expect-pin 8122b8ba057657d449c42e1c0c857be88eda97aebb8c836b07b2cf3589e8316e --as-of 1792012453 --max-head-age 120 --max-finalized-age 1200 --future-skew 60
-```
-
-Observed exit 0 on real saved historical Publicnode/dRPC ZTO evidence at the
-explicit trial time. The demo compares a request file with itself; its pin is
-illustrative, not an independently retained approval or actual client capture.
-For a real decision, supply your own policy, clock, intended request, prior pin
-and separately captured client request. Nothing is signed or sent.
+From the repository root:
 
 ```sh
 python3 -B gathering/run_checks.py
+python3 -B gathering/check_round_09.py
 python3 -B gathering/build_gallery.py
 python3 -B gathering/check_delivery.py
 ```
 
-The final run has 76 passing offline commands and 531 tests. A separate expected
-rejection from Line 2's hypothetical ZTO policy change exits 1 correctly.
-Vendored pieces are exact ordinary Python files; no installation or network is
-needed for offline replay. The shared folder also runs detached from the lines.
+All 87 runner commands pass: 592 test cases pass and one is explicitly skipped.
+The checks include the latest four line tools, the expected one-unit typed-data
+rejection, a stricter-policy rejection, the fresh ZTO batch's offline replay,
+the shared integration and a detached-folder trial. One inherited test requiring
+an additional loopback server is explicitly skipped under the task's endpoint
+restriction. Per-command output is saved in `check-09-*.json` and
+`round-checks-09.json`. No checks sign or dispatch a request.
 
-The mark **Two Pebbles in Time** adds a small heavy-lidded Pepe and two joined
-pebbles to vacant stone on the round-07 gathering wall. Output:
-`artifacts/gathering/wall-v8.png` (also `wall.png`), **1254 × 1254 RGB PNG**;
-`dist/gathering/08.jpg`, **512 × 512 JPEG**; record `08.json`. Full PNG and JPEG
-were visually inspected. No hands/handprints, text or forbidden symbols were
-observed; no known unmet visual requirements. `wall-review-08.json` records
-dimensions, hashes, prompt, preservation and review.
+The fresh real ZTO observation is `live-batch-09.json`: finalized block 26193694,
+one billion ZTO supply and 18 decimals. `live-batch-trial-09.json` records the
+source and outcome. This is an RPC observation, not a state proof or current
+price. `live_batch_09.py` accepts an explicit approved transport route; it does
+not read environment settings and its evidence source remains the public URL.
 
-The gallery has 40 paintings and 93 pending records. PNG artifacts remain
-untracked for separate upload. Structural checks do not independently certify
-appearance or the truth of saved public-chain observations.
+The mark **Two Remembered Branches** adds a small heavy-lidded Pepe and a forked
+twig joining two pairs of pebbles. The built-in imagegen tool generated the new
+pigment; `finish_wall_09.py` composited it onto vacant ancestral stone with exact
+outside-pixel and dark-crack preservation. Its one-time input was overwritten by
+the finished wall. The PNG and JPEG were visually inspected; no known visual
+requirements are unmet. No hands, handprints, text or prohibited symbols appear.
+
+Deliverables: `artifacts/gathering/wall-v9.png` (also `wall.png`), **1254 × 1254
+RGB PNG**; `dist/gathering/09.jpg`, **512 × 512 JPEG**; and `09.json`.
+`wall-review-09.json` records the prompt, preservation, hashes, dimensions,
+formats and review. The gallery holds 45 paintings and 92 pending slots.
+The required PNG remains untracked for separate upload.

@@ -131,5 +131,19 @@
     "sha256": "25033c04f1425af87d08ed682512f7012f11e3a98581d814c1655dc4684c6def",
     "copiedSha256": "25033c04f1425af87d08ed682512f7012f11e3a98581d814c1655dc4684c6def",
     "adaptation": "none; byte-for-byte source copy"
+  },
+  {
+    "source": "line-3/tools/paired-recheck/recheck_pair.py",
+    "copy": "vendor/paired-recheck/recheck_pair.py",
+    "sha256": "6a61fa644381288b31bf64c827d86e8e668005d8f5a319918a82ebd8a1078823",
+    "copiedSha256": "6a61fa644381288b31bf64c827d86e8e668005d8f5a319918a82ebd8a1078823",
+    "adaptation": "none; byte-for-byte source copy"
+  },
+  {
+    "source": "line-4/tools/review-changes/review_changes.py",
+    "copy": "vendor/review_changes.py",
+    "sha256": "b4b25907188b44255faae6a8cbad99458cfd5359dfceee57dca89a82c4d02485",
+    "copiedSha256": "b4b25907188b44255faae6a8cbad99458cfd5359dfceee57dca89a82c4d02485",
+    "adaptation": "none; byte-for-byte source copy"
   }
 ]

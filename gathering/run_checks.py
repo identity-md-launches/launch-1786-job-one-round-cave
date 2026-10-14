@@ -18,6 +18,7 @@ def main():
     # Line 4's tests create/remove fixtures beside their source. Run an exact
     # copy in scratch so even temporary line-folder modifications are avoided.
     shutil.copytree(ROOT / 'line-4/tools/typed-digest', scratch / 'typed-digest', dirs_exist_ok=True)
+    shutil.copytree(ROOT / 'line-4/tools/review-changes', scratch / 'review-changes', dirs_exist_ok=True)
     commands = [
         ['line-1/tools/rpc_snapshot.py', '--verify', 'line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json'],
         ['line-1/tools/bounded-rpc-snapshot/snapshot.py', '--verify', 'line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json'],
@@ -30,7 +31,7 @@ def main():
         ['-m', 'unittest', 'discover', '-s', 'line-3/tools/settlement-check', '-p', 'test_*.py', '-v'],
         ['line-3/tools/payment-witness/witness.py', '--replay', 'line-3/tools/payment-witness/live-evidence.json'],
         ['-m', 'unittest', 'discover', '-s', 'line-3/tools/payment-witness', '-p', 'test_*.py', '-v'],
-        ['line-3/tools/rpc-boundary/check.py'],
+        ['gathering/offline_boundary.py'],
         ['line-4/tools/typed-digest/typed_digest.py', 'line-4/tools/typed-digest/zto-example.json', '--expect', '0xc292388738e2cf2c7f57b9b8926821aff508ed38c1b355020cc7dc459dbbb8cb'],
         ['-m', 'unittest', 'discover', '-s', 'test/scratch/typed-digest', '-p', 'test_*.py', '-v'],
         ['line-4/tools/typed-trace/typed_trace.py', 'line-4/tools/typed-trace/zto-payment.json', '--expect', '0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774', '--summary'],
@@ -111,18 +112,33 @@ def main():
         ['shared/payment-evidence/test_paired_pinned_review.py'],
         ['shared/payment-evidence/paired_pinned_review.py', 'shared/payment-evidence/paired-pinned-evidence.json', 'shared/payment-evidence/paired-pinned-policy.json', 'shared/payment-evidence/paired-pinned-intended.json', 'shared/payment-evidence/paired-pinned-intended.json', '--expect-pin', '8122b8ba057657d449c42e1c0c857be88eda97aebb8c836b07b2cf3589e8316e', '--as-of', '1792012453', '--max-head-age', '120', '--max-finalized-age', '1200', '--future-skew', '60'],
     ])
+    commands.extend([
+        ['line-1/tools/batched-zto-snapshot/batch.py', '--verify', 'line-1/tools/batched-zto-snapshot/live-batch.json'],
+        ['line-2/tools/batch-source/locate.py', 'line-2/tools/ordered-deliverables/record.strict.contract.json', 'dist/line-2/27.json', 'dist/line-2/28.json'],
+        ['line-2/tools/batch-source/test_locate.py'],
+        ['line-2/tools/bounded-contract/check.py', 'line-2/tools/ordered-deliverables/record.strict.contract.json', 'dist/line-2/29.json'],
+        ['line-3/tools/paired-recheck/recheck_pair.py', '--demo'],
+        ['-m', 'unittest', 'discover', '-s', 'line-3/tools/paired-recheck', '-v'],
+        ['line-4/tools/review-changes/review_changes.py', 'line-4/tools/review-changes/zto-set.json', 'line-4/tools/review-changes/zto-set.json', '--expect', 'c1f7a3ff0b7cf878d16be782f567b2bf89f88e9b962ed64210eeaeb2cf6d7023'],
+        ['-m', 'unittest', 'discover', '-s', 'test/scratch/review-changes', '-v'],
+    ])
+    commands.extend([
+        ['line-1/tools/batched-zto-snapshot/batch.py', '--verify', 'gathering/live-batch-09.json'],
+        ['shared/payment-evidence/test_checkpoint_review.py'],
+        ['shared/payment-evidence/checkpoint_review.py', 'shared/payment-evidence/checkpoint-baseline.json', 'shared/payment-evidence/paired-pinned-evidence.json', 'shared/payment-evidence/paired-pinned-policy.json', 'shared/payment-evidence/paired-pinned-intended.json', 'shared/payment-evidence/paired-pinned-intended.json', '--baseline-pin', 'dd94a4fb3ef241db9cffbf8ccb24b4486e0eea308b1c34a7e0668f6c92f90dd4', '--request-pin', '8122b8ba057657d449c42e1c0c857be88eda97aebb8c836b07b2cf3589e8316e', '--as-of', '1792012453', '--max-head-age', '120', '--max-finalized-age', '1200', '--future-skew', '60'],
+    ])
     results = []
     for args in commands:
         command = [sys.executable, '-B', *args]
         started = time.monotonic()
-        result = subprocess.run(command, capture_output=True, text=True, timeout=45)
+        result = subprocess.run(command, capture_output=True, text=True, timeout=45, env={'PYTHONDONTWRITEBYTECODE': '1', 'PATH': '/usr/bin:/bin'})
         results.append({'command': ' '.join(['python3', '-B', *args]),
                         'exitCode': result.returncode, 'seconds': round(time.monotonic()-started, 3),
                         'stdout': result.stdout if len(result.stdout) < 15000 else '[large HTML output; SHA-256 ' + __import__('hashlib').sha256(result.stdout.encode()).hexdigest() + '; bytes ' + str(len(result.stdout.encode())) + ']', 'stderr': result.stderr})
         print('PASS' if result.returncode == 0 else 'FAIL', ' '.join(args), flush=True)
     for group in ['line-1', 'line-2', 'line-3', 'line-4', 'shared']:
-        selected = [r for r in results if group in r['command'] or (group == 'line-4' and 'test/scratch/typed-digest' in r['command'])]
-        (ROOT / ('gathering/check-08-' + group + '.json')).write_text(json.dumps(selected, separators=(',', ':'))+'\n')
+        selected = [r for r in results if group in r['command'] or (group == 'line-4' and any(x in r['command'] for x in ('test/scratch/typed-digest', 'test/scratch/review-changes'))) or (group == 'line-3' and 'gathering/offline_boundary.py' in r['command'])]
+        (ROOT / ('gathering/check-09-' + group + '.json')).write_text(json.dumps(selected, separators=(',', ':'))+'\n')
     return 0 if all(r['exitCode'] == 0 for r in results) else 1
 
 
