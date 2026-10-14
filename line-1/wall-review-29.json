@@ -1,0 +1,42 @@
+{
+  "ancestor_sha256": "4f3a96b34323a5d19cae938b63c61198e062b81e27ec18405ca9971fae003ab6",
+  "wall_sha256": "af98464f7724f387d3663f26315c634e3d5c0157b488eb45203f8e86d35770df",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "output_paths": [
+    "artifacts/line-1/wall.png",
+    "artifacts/line-1/wall-v9.png"
+  ],
+  "changed_pixels": 8703,
+  "unchanged_pixels": 1563813,
+  "changed_bounds_inclusive": [
+    594,
+    210,
+    700,
+    334
+  ],
+  "outside_addition_identical": true,
+  "preview": {
+    "path": "dist/line-1/29.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 75792
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "draft_sha256": "d05b88f2ea64c4cb6dfec1d00ca3e589e4ceb7d9962fe205a772a17d0c132ebe",
+    "draft_dimensions": [
+      1254,
+      1254
+    ],
+    "draft_retained": false,
+    "postprocess": "Feathered only the new bowl and streams from the generated draft onto exact ancestor stone."
+  },
+  "visual_review": {
+    "status": "inspected final PNG; no known unmet visual requirements",
+    "unmet_visual_requirements": []
+  }
+}
