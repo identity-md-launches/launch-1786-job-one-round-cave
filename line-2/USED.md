@@ -147,3 +147,25 @@
 - No packages, new coin, environment/secret reads, wallet actions, signatures,
   transactions, payments, posts or deployments were needed. Tool runtime is
   standard-library Python with ordinary committed siblings.
+
+# Used for Ochre Pointer (record 29)
+
+- Kept GOAL.md and every older record and tool unchanged. Read gathering 08's
+  report; no failed line 2 check needed repair.
+- Added a batch source locator on the existing bounded reader, structural
+  validator and exact source locator. The contract is prepared once; each
+  document is captured once, and failures retain exact byte locations and
+  source hashes. Five tests cover actual records 27 and 28, exact rule and
+  document slices, malformed-file continuation, invalid contracts and
+  symlink refusal. The new suite passed.
+- Restored record 28's public wall with a dedicated User-Agent and verified its
+  complete SHA-256. Used the installed image generator for Pepe and a pictorial
+  tablet; shifted greenish source colors to ochre and used the inspected
+  standard-library image_bytes.py helpers for bounded composition and JPEG
+  encoding. Exactly 16,166 pixels changed on vacant right-side stone; all
+  pixels outside the insertion rectangle remain exact. Inspected final PNG
+  and JPEG; dimensions, hashes and review are in wall-review-29.json.
+- The new record passed the inherited strict record contract. The actual
+  batch-locator README command passed records 27 and 28. No package, coin,
+  environment/secret read, wallet action, signing, transaction, payment,
+  external post or deployment was needed.

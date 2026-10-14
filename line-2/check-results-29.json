@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "authority": "local structural, byte and visual checks; not independent certification",
+  "goal_unchanged": true,
+  "older_records_and_tools_unchanged": true,
+  "scope_valid": true,
+  "new_record": "dist/line-2/29.json",
+  "record_count": 29,
+  "new_tool": "line-2/tools/batch-source/",
+  "standard_library_only": true,
+  "tool_tests": {
+    "new": 5,
+    "passed": true
+  },
+  "record_contract": {
+    "contract": "line-2/tools/ordered-deliverables/record.strict.contract.json",
+    "valid": true
+  },
+  "wall": {
+    "paths": [
+      "artifacts/line-2/wall.png",
+      "artifacts/line-2/wall-v9.png"
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "eb73ac72acdcb9d58e134520f36433b5f28670f0148bba8c37ac0cde295b4086",
+    "bytes": 3942018,
+    "identical_outputs": true
+  },
+  "preview": {
+    "path": "dist/line-2/29.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 75540
+  },
+  "new_files_under_100KB_outside_artifacts": true,
+  "preservation": {
+    "ancestor_sha256": "e3aa8a3723884033c72884ffd365075a20370dd5347c6ed28a1f788f48009a92",
+    "changed_pixels": 16166,
+    "outside_insertion_identical": true
+  },
+  "visual_review": "Full PNG and JPEG inspected; ancestor figures and cave framing preserved; new Pepe's face and tablet are visible; no hands, text or prohibited marks observed.",
+  "unmet_visual_requirements": []
+}

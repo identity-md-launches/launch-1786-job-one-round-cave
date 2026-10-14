@@ -1,0 +1,62 @@
+{
+  "name": "Ochre Pointer",
+  "number": 29,
+  "ancestor_sha256": "e3aa8a3723884033c72884ffd365075a20370dd5347c6ed28a1f788f48009a92",
+  "sha256": "eb73ac72acdcb9d58e134520f36433b5f28670f0148bba8c37ac0cde295b4086",
+  "full_wall": {
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 3942018
+  },
+  "wall_paths": [
+    "artifacts/line-2/wall.png",
+    "artifacts/line-2/wall-v9.png"
+  ],
+  "addition_region": {
+    "x": 1048,
+    "y": 570,
+    "width": 192,
+    "height": 154
+  },
+  "painted_bounds_inclusive": [
+    1048,
+    577,
+    1239,
+    715
+  ],
+  "changed_pixels": 16166,
+  "unchanged_pixels": 1556350,
+  "outside_region_pixel_identical": true,
+  "source_motif": {
+    "format": "PNG",
+    "width": 1410,
+    "height": 1116,
+    "alpha_bbox": [
+      98,
+      119,
+      1328,
+      1012
+    ],
+    "green_pixels_remapped_to_ochre": 4126
+  },
+  "preview": {
+    "path": "dist/line-2/29.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 75540
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "draft_dimensions": [
+      1410,
+      1116
+    ],
+    "draft_retained": false,
+    "background": "transparent"
+  },
+  "visual_review": "Inspected the full 1254px PNG and decoded 512px JPEG: the inherited cave rock, cracks, light, water, framing and all previous figures remain visible. The new right-side figure is Pepe with heavy-lidded eyes and a broad mouth beside an unlettered stone tablet; pigment is ochre, charcoal and chalk. The addition has no visible hands or handprints, so there are no digits to count. No letters, numbers, captions, signatures, logos, watermarks, borders, added frames, real people or prohibited symbols were observed.",
+  "unmet_visual_requirements": []
+}
