@@ -1,0 +1,48 @@
+{
+  "ancestorSha256": "68212d94ada928b0972359d7ab8da0cf98064590fa3ae758eefdf2259196b973",
+  "ancestorDimensions": [
+    1254,
+    1254
+  ],
+  "wallDimensions": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "f5a6dde219059ae9e85c6cd63624dc315410bffa752f97a7bf0b351ad6f31af5",
+  "draftSha256": "13c810750afcea487d921e174220d9baa6c9d738f1d4ee6666f59ae1fe76c43d",
+  "draftRetained": false,
+  "additionRectangle": [
+    475,
+    922,
+    320,
+    78
+  ],
+  "changedPixels": 4230,
+  "unchangedPixels": 1568286,
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewDimensions": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75026,
+  "previewQuality": 52,
+  "imageTool": "image_gen.imagegen",
+  "promptSummary": "Two uneven looping tracks, charcoal and red ochre, curve back together around one yellow ochre pebble; isolated worn cave pigment on white. No text, numbers, arrows, hands, figures, logos or frames.",
+  "reviewStatus": "Opened and visually inspected full PNG and decoded 512-pixel JPEG",
+  "unmetVisualRequirements": [],
+  "visualReview": {
+    "recognizablePepe": true,
+    "earthPigments": true,
+    "rockCracksLightingFramingPreserved": true,
+    "ancestorMarksPreserved": true,
+    "lettersNumbersLogosFramesObserved": false,
+    "newHandsOrHandprints": 0,
+    "digitReview": "No hands or handprints added. Ancestor hands remain hidden, so there are no visible digits to count.",
+    "placement": "Two worn returning tracks and their shared stone on vacant lower rock below the sieve, above the water.",
+    "limitations": "Local visual review, not independent certification. The addition is deliberately worn and subdued at thumbnail size."
+  }
+}

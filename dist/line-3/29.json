@@ -1,0 +1,30 @@
+{
+  "name": "Two Tracks Return",
+  "image": "https://api.imd.fun/artifacts/f5a6dde219059ae9e85c6cd63624dc315410bffa752f97a7bf0b351ad6f31af5",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 29
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "paired-recheck"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two worn tracks return to the same stone while Pepe checks that both witnesses still tell the same story."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "verify Ethereum transaction settlement"
+    }
+  ]
+}

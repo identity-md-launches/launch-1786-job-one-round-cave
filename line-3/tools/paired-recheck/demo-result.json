@@ -1,0 +1,365 @@
+{
+  "accepted": true,
+  "state": "paired_continued_within_time_budget",
+  "alerts": [],
+  "policy": {
+    "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+    "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+    "minimum_raw": "166357571280020680094504",
+    "token": "ZTO",
+    "confirmations": 12,
+    "finalized": true
+  },
+  "timePolicy": {
+    "asOfUnix": 1792012453,
+    "maxHeadAgeSeconds": 120,
+    "maxFinalizedAgeSeconds": 1200,
+    "futureSkewSeconds": 60
+  },
+  "baselineSha256": "dd94a4fb3ef241db9cffbf8ccb24b4486e0eea308b1c34a7e0668f6c92f90dd4",
+  "currentSha256": "003b451e06c2fd8a135c06278833fb9e6b4d825e77330bce9c16e06545fe3731",
+  "conflictingBlockNumbers": [],
+  "continuity": [
+    {
+      "source": "https://ethereum-rpc.publicnode.com",
+      "accepted": true,
+      "state": "continued",
+      "alerts": [],
+      "policy": {
+        "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+        "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+        "minimum_raw": "166357571280020680094504",
+        "token": "ZTO",
+        "confirmations": 12,
+        "finalized": true
+      },
+      "baseline": {
+        "accepted": true,
+        "state": "settled",
+        "head": {
+          "number": 26192482,
+          "hash": "0x7a2ef58cee6f85f22f597d57a4049dc0fd2d1bbe1744576168b3686c83dae32a"
+        },
+        "inclusion": {
+          "number": 26190898,
+          "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+        },
+        "execution": "succeeded",
+        "confirmations": 1585,
+        "finalized": true,
+        "finalizedHead": {
+          "number": 26192388,
+          "hash": "0xc2a4af8da40000a444f2bd3a51b8b1d1fa7b5e8ab4fe56c4112a5d89eeae82f1"
+        },
+        "paymentState": "verified",
+        "transferEvidence": {
+          "incomingRaw": "166357571280020680094504",
+          "outgoingRaw": "0",
+          "netRaw": "166357571280020680094504",
+          "events": [
+            {
+              "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+              "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+              "raw": "166357571280020680094504",
+              "logIndex": 632
+            }
+          ]
+        }
+      },
+      "current": {
+        "accepted": true,
+        "state": "settled",
+        "head": {
+          "number": 26193361,
+          "hash": "0xaf2461700cb5c5c65cd4849b67cd10c7bf455ecf045c4da4c4f40f8cc158b283"
+        },
+        "inclusion": {
+          "number": 26190898,
+          "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+        },
+        "execution": "succeeded",
+        "confirmations": 2464,
+        "finalized": true,
+        "finalizedHead": {
+          "number": 26193280,
+          "hash": "0x1cc3cef221f87b9ce988d2e45a9394bc365f2984932bb1c3ffe80bd875d69d2e"
+        },
+        "paymentState": "verified",
+        "transferEvidence": {
+          "incomingRaw": "166357571280020680094504",
+          "outgoingRaw": "0",
+          "netRaw": "166357571280020680094504",
+          "events": [
+            {
+              "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+              "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+              "raw": "166357571280020680094504",
+              "logIndex": 632
+            }
+          ]
+        }
+      },
+      "baselineSha256": "d02e6d78bb0b918586afe579aaae55dd8ec95619cb7174fc17dad5b110a69092",
+      "currentSha256": "fed4564a68750b982a15e434bf8692b88c1968df78fd881a0875d22eb70e6885",
+      "evidenceMode": "offline historical comparison",
+      "evidenceLimit": "Provider observations, not a consensus or receipt proof. Advancing block height does not prove wall-clock freshness. Offline replay is historical."
+    },
+    {
+      "source": "https://eth.drpc.org",
+      "accepted": true,
+      "state": "continued",
+      "alerts": [],
+      "policy": {
+        "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+        "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+        "minimum_raw": "166357571280020680094504",
+        "token": "ZTO",
+        "confirmations": 12,
+        "finalized": true
+      },
+      "baseline": {
+        "accepted": true,
+        "state": "settled",
+        "head": {
+          "number": 26192482,
+          "hash": "0x7a2ef58cee6f85f22f597d57a4049dc0fd2d1bbe1744576168b3686c83dae32a"
+        },
+        "inclusion": {
+          "number": 26190898,
+          "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+        },
+        "execution": "succeeded",
+        "confirmations": 1585,
+        "finalized": true,
+        "finalizedHead": {
+          "number": 26192388,
+          "hash": "0xc2a4af8da40000a444f2bd3a51b8b1d1fa7b5e8ab4fe56c4112a5d89eeae82f1"
+        },
+        "paymentState": "verified",
+        "transferEvidence": {
+          "incomingRaw": "166357571280020680094504",
+          "outgoingRaw": "0",
+          "netRaw": "166357571280020680094504",
+          "events": [
+            {
+              "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+              "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+              "raw": "166357571280020680094504",
+              "logIndex": 632
+            }
+          ]
+        }
+      },
+      "current": {
+        "accepted": true,
+        "state": "settled",
+        "head": {
+          "number": 26193361,
+          "hash": "0xaf2461700cb5c5c65cd4849b67cd10c7bf455ecf045c4da4c4f40f8cc158b283"
+        },
+        "inclusion": {
+          "number": 26190898,
+          "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+        },
+        "execution": "succeeded",
+        "confirmations": 2464,
+        "finalized": true,
+        "finalizedHead": {
+          "number": 26193280,
+          "hash": "0x1cc3cef221f87b9ce988d2e45a9394bc365f2984932bb1c3ffe80bd875d69d2e"
+        },
+        "paymentState": "verified",
+        "transferEvidence": {
+          "incomingRaw": "166357571280020680094504",
+          "outgoingRaw": "0",
+          "netRaw": "166357571280020680094504",
+          "events": [
+            {
+              "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+              "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+              "raw": "166357571280020680094504",
+              "logIndex": 632
+            }
+          ]
+        }
+      },
+      "baselineSha256": "d02e6d78bb0b918586afe579aaae55dd8ec95619cb7174fc17dad5b110a69092",
+      "currentSha256": "fed4564a68750b982a15e434bf8692b88c1968df78fd881a0875d22eb70e6885",
+      "evidenceMode": "offline historical comparison",
+      "evidenceLimit": "Provider observations, not a consensus or receipt proof. Advancing block height does not prove wall-clock freshness. Offline replay is historical."
+    }
+  ],
+  "currentFreshness": {
+    "accepted": true,
+    "state": "corroborated_within_time_budget",
+    "alerts": [],
+    "policy": {
+      "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+      "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+      "minimum_raw": "166357571280020680094504",
+      "token": "ZTO",
+      "confirmations": 12,
+      "finalized": true
+    },
+    "timePolicy": {
+      "asOfUnix": 1792012453,
+      "maxHeadAgeSeconds": 120,
+      "maxFinalizedAgeSeconds": 1200,
+      "futureSkewSeconds": 60
+    },
+    "paymentDifferences": [],
+    "conflictingBlockNumbers": [],
+    "providers": [
+      {
+        "source": "https://ethereum-rpc.publicnode.com",
+        "accepted": true,
+        "state": "within_time_budget",
+        "alerts": [],
+        "policy": {
+          "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+          "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+          "minimum_raw": "166357571280020680094504",
+          "token": "ZTO",
+          "confirmations": 12,
+          "finalized": true
+        },
+        "timePolicy": {
+          "asOfUnix": 1792012453,
+          "maxHeadAgeSeconds": 120,
+          "maxFinalizedAgeSeconds": 1200,
+          "futureSkewSeconds": 60
+        },
+        "anchors": {
+          "head": {
+            "number": 26193361,
+            "hash": "0xaf2461700cb5c5c65cd4849b67cd10c7bf455ecf045c4da4c4f40f8cc158b283",
+            "timestampUnix": 1792012451,
+            "ageSeconds": 2,
+            "maxAgeSeconds": 120
+          },
+          "finalized": {
+            "number": 26193280,
+            "hash": "0x1cc3cef221f87b9ce988d2e45a9394bc365f2984932bb1c3ffe80bd875d69d2e",
+            "timestampUnix": 1792011479,
+            "ageSeconds": 974,
+            "maxAgeSeconds": 1200
+          }
+        },
+        "payment": {
+          "accepted": true,
+          "state": "settled",
+          "head": {
+            "number": 26193361,
+            "hash": "0xaf2461700cb5c5c65cd4849b67cd10c7bf455ecf045c4da4c4f40f8cc158b283"
+          },
+          "inclusion": {
+            "number": 26190898,
+            "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+          },
+          "execution": "succeeded",
+          "confirmations": 2464,
+          "finalized": true,
+          "finalizedHead": {
+            "number": 26193280,
+            "hash": "0x1cc3cef221f87b9ce988d2e45a9394bc365f2984932bb1c3ffe80bd875d69d2e"
+          },
+          "paymentState": "verified",
+          "transferEvidence": {
+            "incomingRaw": "166357571280020680094504",
+            "outgoingRaw": "0",
+            "netRaw": "166357571280020680094504",
+            "events": [
+              {
+                "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+                "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+                "raw": "166357571280020680094504",
+                "logIndex": 632
+              }
+            ]
+          }
+        },
+        "sampleSha256": "fed4564a68750b982a15e434bf8692b88c1968df78fd881a0875d22eb70e6885",
+        "evidenceMode": "offline historical evaluation at explicit time",
+        "evidenceLimit": "Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time."
+      },
+      {
+        "source": "https://eth.drpc.org",
+        "accepted": true,
+        "state": "within_time_budget",
+        "alerts": [],
+        "policy": {
+          "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+          "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+          "minimum_raw": "166357571280020680094504",
+          "token": "ZTO",
+          "confirmations": 12,
+          "finalized": true
+        },
+        "timePolicy": {
+          "asOfUnix": 1792012453,
+          "maxHeadAgeSeconds": 120,
+          "maxFinalizedAgeSeconds": 1200,
+          "futureSkewSeconds": 60
+        },
+        "anchors": {
+          "head": {
+            "number": 26193361,
+            "hash": "0xaf2461700cb5c5c65cd4849b67cd10c7bf455ecf045c4da4c4f40f8cc158b283",
+            "timestampUnix": 1792012451,
+            "ageSeconds": 2,
+            "maxAgeSeconds": 120
+          },
+          "finalized": {
+            "number": 26193280,
+            "hash": "0x1cc3cef221f87b9ce988d2e45a9394bc365f2984932bb1c3ffe80bd875d69d2e",
+            "timestampUnix": 1792011479,
+            "ageSeconds": 974,
+            "maxAgeSeconds": 1200
+          }
+        },
+        "payment": {
+          "accepted": true,
+          "state": "settled",
+          "head": {
+            "number": 26193361,
+            "hash": "0xaf2461700cb5c5c65cd4849b67cd10c7bf455ecf045c4da4c4f40f8cc158b283"
+          },
+          "inclusion": {
+            "number": 26190898,
+            "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+          },
+          "execution": "succeeded",
+          "confirmations": 2464,
+          "finalized": true,
+          "finalizedHead": {
+            "number": 26193280,
+            "hash": "0x1cc3cef221f87b9ce988d2e45a9394bc365f2984932bb1c3ffe80bd875d69d2e"
+          },
+          "paymentState": "verified",
+          "transferEvidence": {
+            "incomingRaw": "166357571280020680094504",
+            "outgoingRaw": "0",
+            "netRaw": "166357571280020680094504",
+            "events": [
+              {
+                "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+                "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+                "raw": "166357571280020680094504",
+                "logIndex": 632
+              }
+            ]
+          }
+        },
+        "sampleSha256": "fed4564a68750b982a15e434bf8692b88c1968df78fd881a0875d22eb70e6885",
+        "evidenceMode": "offline historical evaluation at explicit time",
+        "evidenceLimit": "Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time."
+      }
+    ],
+    "sampleSha256": "003b451e06c2fd8a135c06278833fb9e6b4d825e77330bce9c16e06545fe3731",
+    "evidenceMode": "offline historical paired evaluation at explicit time",
+    "evidenceLimit": "Two URL-labelled provider observations and caller time are trusted inputs, not consensus, independent operators, source authentication or receipt proofs. Offline results apply only at the explicitly supplied historical time."
+  },
+  "evidenceMode": "offline historical paired recheck at explicit time",
+  "evidenceLimit": "Historical provider observations, not consensus, receipt proofs or source authentication. A retained digest detects replacement only if retained independently. Source labels do not prove independent operators. Caller time and provider timestamps are trusted. No ancestry proof connects different-height anchors; later reorgs remain possible.",
+  "demoNote": "Real historical ZTO pairs. Demo pin and recipient/amount are illustrative, not independently retained approval, an invoice or present freshness."
+}

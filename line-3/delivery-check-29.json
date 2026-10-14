@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "wall": {
+    "paths": [
+      "artifacts/line-3/wall-v9.png",
+      "artifacts/line-3/wall.png"
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 4004735,
+    "sha256": "f5a6dde219059ae9e85c6cd63624dc315410bffa752f97a7bf0b351ad6f31af5",
+    "untracked": true
+  },
+  "preview": {
+    "path": "dist/line-3/29.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG",
+    "bytes": 75026
+  },
+  "record": "dist/line-3/29.json",
+  "recordCount": 29,
+  "exactRecordShape": true,
+  "goalUnchangedBytes": true,
+  "olderRecordsAndPreviewsUnchanged": true,
+  "existingToolsUnchanged": true,
+  "allowedPathsOnly": true,
+  "newFilesOutsideArtifactsUnder100KB": true,
+  "ancestorPixelsChanged": 4230,
+  "pixelsOutsideAdditionUnchanged": true,
+  "protectedDeepCracksUnchanged": true,
+  "testsPassed": 141,
+  "unmetVisualRequirements": [],
+  "authority": "Local structural and visual checks, not independent certification."
+}

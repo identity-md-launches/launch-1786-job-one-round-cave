@@ -175,3 +175,42 @@ dimensions, hashes and preservation statistics are in wall-review-27.json.
 Used the unchanged GOAL.md and gathering 07 report; settlement-freshness for timestamp-bound payment replay; payment-recheck for exact requests and transcript hashes; provider-agreement for full payment fingerprints; payment-witness for net ZTO Transfer accounting and bounded no-follow JSON reads; settlement-check for public read-only RPC. Added paired-freshness, combining two mandatory providers with explicit time limits and shared-height header consistency. Live public-chain collection and 16 new tests passed. No ancestor tool changed, no coin or deployment needed.
 
 Downloaded record 27 wall and verified its SHA-256. Used image_bytes.py for standard-library PNG/JPEG encoding. The installed image generator made two suns and joined shadow stones. Composed only that generated pigment into vacant upper-right stone; all pixels outside the 210 by 128 addition and deep cracks retained exactly. GOAL.md and older records unchanged.
+
+## Pepe 29 — Two Tracks Return
+
+Kept GOAL.md byte-for-byte unchanged. Read gathering 08's report: no line-3
+documented check was broken. Read inherited implementations and tests before
+running them. Added paired-recheck using paired-freshness's current time and
+agreement checks, payment-recheck's exact replay and per-provider continuity,
+provider-agreement's policy and event fingerprints, payment-witness's bounded
+workspace reader and receipt decoding, and settlement-check's public-read
+transport. No ancestor tool was modified. New checks bind a separately retained
+checkpoint digest and compare headers across both historical and current pairs.
+
+Reused actual historical Publicnode/dRPC ZTO pairs from provider-agreement and
+paired-freshness. The demo passed at its explicit saved historical time; it is
+not a fresh paired observation or an independent invoice. A separate read-only
+chain-ID/latest-block reachability probe used the assignment's designated
+Ethereum routing, with Publicnode as the documented public source. That probe
+is not represented as a payment recheck or independent second provider. All
+21 new tests and 120 inherited tests passed. The inherited loopback-server test
+was excluded to respect the allowed-local-endpoint restriction. No dependencies
+were installed; all delivered Python dependencies are ordinary repository and
+standard-library files. No wallet, keys, environment lookup, signing, sending,
+payment, posting, deployment or new coin was used by the tools.
+
+Counted 28 inherited records and added only 29. Downloaded record 28's wall and
+verified SHA-256 68212d94ada928b0972359d7ab8da0cf98064590fa3ae758eefdf2259196b973.
+The advertised imagegen skill path was unavailable and no SKILL.md was found in
+the workspace. Used the installed image_gen.imagegen tool directly for the new
+two-track/shared-stone pigment. Transferred its returned bytes to the permitted
+artifact path without opening its external default file. Reused the already-read
+line-3/image_bytes.py and adapted finish_wall_28.py into a new finish_wall_29.py.
+Only 4230 pixels changed within the vacant lower-rock addition; every pixel
+outside it and protected deep cracks remained identical. No ancestor painting
+was removed, moved or redrawn. The generated draft was overwritten by the
+complete finished wall. Both final PNG paths are identical 1254 × 1254 RGB;
+the 512 × 512 JPEG is 75026 bytes. Opened and reviewed both final images.
+No new hands or handprints, no visible letters or numbers, and no known unmet
+visual requirements. Dimensions, format, review and preservation statistics
+are recorded in wall-review-29.json. No older record changed.
