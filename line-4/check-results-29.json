@@ -1,0 +1,76 @@
+{
+  "localChecks": [
+    {
+      "check": "match",
+      "exit": 0,
+      "expectedExit": 0,
+      "passed": true
+    },
+    {
+      "check": "change",
+      "exit": 1,
+      "expectedExit": 1,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-4/tools/review-changes",
+        "-v"
+      ],
+      "exit": 0,
+      "output": "test_account_is_separate_from_digest (test_review_changes.ChangeTests.test_account_is_separate_from_digest) ... ok\ntest_array_growth_and_exact_element_paths (test_review_changes.ChangeTests.test_array_growth_and_exact_element_paths) ... ok\ntest_bad_added_entry_is_input_error (test_review_changes.ChangeTests.test_bad_added_entry_is_input_error) ... ok\ntest_bounds_fail_closed_without_truncation (test_review_changes.ChangeTests.test_bounds_fail_closed_without_truncation) ... ok\ntest_cli_exits_and_immutable (test_review_changes.ChangeTests.test_cli_exits_and_immutable) ... ok\ntest_domain_chain (test_review_changes.ChangeTests.test_domain_chain) ... ok\ntest_dynamic_preimage_change_with_simulated_equal_words (test_review_changes.ChangeTests.test_dynamic_preimage_change_with_simulated_equal_words) ... ok\ntest_empty_array_dependency_change (test_review_changes.ChangeTests.test_empty_array_dependency_change) ... ok\ntest_encoding_bytes_fallback (test_review_changes.ChangeTests.test_encoding_bytes_fallback) ... ok\ntest_field_order_change_despite_same_values (test_review_changes.ChangeTests.test_field_order_change_despite_same_values) ... ok\ntest_format_case_numeric_equivalence (test_review_changes.ChangeTests.test_format_case_numeric_equivalence) ... ok\ntest_integer_type_change_equal_word (test_review_changes.ChangeTests.test_integer_type_change_equal_word) ... ok\ntest_membership_and_order (test_review_changes.ChangeTests.test_membership_and_order) ... ok\ntest_nested_array_element (test_review_changes.ChangeTests.test_nested_array_element) ... ok\ntest_one_raw_unit_no_rounding_and_no_parent_noise (test_review_changes.ChangeTests.test_one_raw_unit_no_rounding_and_no_parent_noise) ... ok\ntest_pin_mismatch_before_candidate_read (test_review_changes.ChangeTests.test_pin_mismatch_before_candidate_read) ... ok\ntest_primary_type_rename (test_review_changes.ChangeTests.test_primary_type_rename) ... ok\ntest_removed_and_added_fields (test_review_changes.ChangeTests.test_removed_and_added_fields) ... ok\ntest_signed_fixed_bytes_dynamic_bytes_and_bool (test_review_changes.ChangeTests.test_signed_fixed_bytes_dynamic_bytes_and_bool) ... ok\ntest_strict_file_errors_and_symlink (test_review_changes.ChangeTests.test_strict_file_errors_and_symlink) ... ok\ntest_substituting_both_inputs (test_review_changes.ChangeTests.test_substituting_both_inputs) ... ok\ntest_unchanged_historical_zto (test_review_changes.ChangeTests.test_unchanged_historical_zto) ... ok\ntest_unicode_control_characters_escaped_and_exact (test_review_changes.ChangeTests.test_unicode_control_characters_escaped_and_exact) ... ok\ntest_unused_types_ignored_but_validated (test_review_changes.ChangeTests.test_unused_types_ignored_but_validated) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.396s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-4/tools/review-pin",
+        "-v"
+      ],
+      "exit": 0,
+      "output": "test_bad_pin_syntax (test_review_pin.PinTests.test_bad_pin_syntax) ... ok\ntest_canonical_protocol_bytes (test_review_pin.PinTests.test_canonical_protocol_bytes) ... ok\ntest_cli_outside_hidden_and_malformed_pin (test_review_pin.PinTests.test_cli_outside_hidden_and_malformed_pin) ... ok\ntest_cli_pin_accept_missing (test_review_pin.PinTests.test_cli_pin_accept_missing) ... ok\ntest_client_alteration_rejected_with_correct_pin (test_review_pin.PinTests.test_client_alteration_rejected_with_correct_pin) ... ok\ntest_domain_and_field_order_change_pin (test_review_pin.PinTests.test_domain_and_field_order_change_pin) ... ok\ntest_dynamic_preimage_not_only_digest (test_review_pin.PinTests.test_dynamic_preimage_not_only_digest) ... ok\ntest_historical_zto_and_pinned_fixture (test_review_pin.PinTests.test_historical_zto_and_pinned_fixture) ... ok\ntest_invalid_empty_duplicate_or_method (test_review_pin.PinTests.test_invalid_empty_duplicate_or_method) ... ok\ntest_invalid_unused_type_still_rejected (test_review_pin.PinTests.test_invalid_unused_type_still_rejected) ... ok\ntest_label_membership_order_bound (test_review_pin.PinTests.test_label_membership_order_bound) ... ok\ntest_public_account_bound_separately (test_review_pin.PinTests.test_public_account_bound_separately) ... ok\ntest_size_bound_and_immutable (test_review_pin.PinTests.test_size_bound_and_immutable) ... ok\ntest_strict_json (test_review_pin.PinTests.test_strict_json) ... ok\ntest_substitution_of_both_inputs_rejected (test_review_pin.PinTests.test_substitution_of_both_inputs_rejected) ... ok\ntest_summary_cannot_bypass_parent_report_limit (test_review_pin.PinTests.test_summary_cannot_bypass_parent_report_limit) ... ok\ntest_transport_format_case_and_integer_equivalence (test_review_pin.PinTests.test_transport_format_case_and_integer_equivalence) ... ok\ntest_unused_valid_type_not_signed_or_pinned (test_review_pin.PinTests.test_unused_valid_type_not_signed_or_pinned) ... ok\ntest_wrong_pin_never_opens_client (test_review_pin.PinTests.test_wrong_pin_never_opens_client) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.166s\n\nOK\n"
+    }
+  ],
+  "authority": "Local checks only; not independent certification.",
+  "detachedFolderChecks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-v"
+      ],
+      "cwd": "test/scratch/line4-detached-review-changes",
+      "exit": 0,
+      "output": "test_account_is_separate_from_digest (test_review_changes.ChangeTests.test_account_is_separate_from_digest) ... ok\ntest_array_growth_and_exact_element_paths (test_review_changes.ChangeTests.test_array_growth_and_exact_element_paths) ... ok\ntest_bad_added_entry_is_input_error (test_review_changes.ChangeTests.test_bad_added_entry_is_input_error) ... ok\ntest_bounds_fail_closed_without_truncation (test_review_changes.ChangeTests.test_bounds_fail_closed_without_truncation) ... ok\ntest_cli_exits_and_immutable (test_review_changes.ChangeTests.test_cli_exits_and_immutable) ... ok\ntest_domain_chain (test_review_changes.ChangeTests.test_domain_chain) ... ok\ntest_dynamic_preimage_change_with_simulated_equal_words (test_review_changes.ChangeTests.test_dynamic_preimage_change_with_simulated_equal_words) ... ok\ntest_empty_array_dependency_change (test_review_changes.ChangeTests.test_empty_array_dependency_change) ... ok\ntest_encoding_bytes_fallback (test_review_changes.ChangeTests.test_encoding_bytes_fallback) ... ok\ntest_field_order_change_despite_same_values (test_review_changes.ChangeTests.test_field_order_change_despite_same_values) ... ok\ntest_format_case_numeric_equivalence (test_review_changes.ChangeTests.test_format_case_numeric_equivalence) ... ok\ntest_integer_type_change_equal_word (test_review_changes.ChangeTests.test_integer_type_change_equal_word) ... ok\ntest_membership_and_order (test_review_changes.ChangeTests.test_membership_and_order) ... ok\ntest_nested_array_element (test_review_changes.ChangeTests.test_nested_array_element) ... ok\ntest_one_raw_unit_no_rounding_and_no_parent_noise (test_review_changes.ChangeTests.test_one_raw_unit_no_rounding_and_no_parent_noise) ... ok\ntest_pin_mismatch_before_candidate_read (test_review_changes.ChangeTests.test_pin_mismatch_before_candidate_read) ... ok\ntest_primary_type_rename (test_review_changes.ChangeTests.test_primary_type_rename) ... ok\ntest_removed_and_added_fields (test_review_changes.ChangeTests.test_removed_and_added_fields) ... ok\ntest_signed_fixed_bytes_dynamic_bytes_and_bool (test_review_changes.ChangeTests.test_signed_fixed_bytes_dynamic_bytes_and_bool) ... ok\ntest_strict_file_errors_and_symlink (test_review_changes.ChangeTests.test_strict_file_errors_and_symlink) ... ok\ntest_substituting_both_inputs (test_review_changes.ChangeTests.test_substituting_both_inputs) ... ok\ntest_unchanged_historical_zto (test_review_changes.ChangeTests.test_unchanged_historical_zto) ... ok\ntest_unicode_control_characters_escaped_and_exact (test_review_changes.ChangeTests.test_unicode_control_characters_escaped_and_exact) ... ok\ntest_unused_types_ignored_but_validated (test_review_changes.ChangeTests.test_unused_types_ignored_but_validated) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.396s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "review_changes.py",
+        "zto-set.json",
+        "zto-set.json",
+        "--expect",
+        "c1f7a3ff0b7cf878d16be782f567b2bf89f88e9b962ed64210eeaeb2cf6d7023"
+      ],
+      "cwd": "test/scratch/line4-detached-review-changes",
+      "exit": 0,
+      "output": "{\n  \"version\": 1,\n  \"pinMatches\": true,\n  \"expectedPin\": \"c1f7a3ff0b7cf878d16be782f567b2bf89f88e9b962ed64210eeaeb2cf6d7023\",\n  \"actualPin\": \"c1f7a3ff0b7cf878d16be782f567b2bf89f88e9b962ed64210eeaeb2cf6d7023\",\n  \"pinScheme\": \"eip712-request-review-pin:v1\",\n  \"pinTrust\": \"expected pin must be independently retained after review; not a signature\",\n  \"accepted\": true,\n  \"membershipMatches\": true,\n  \"orderMatches\": true,\n  \"beforeOrder\": [\n    \"zto-receipt-review\"\n  ],\n  \"afterOrder\": [\n    \"zto-receipt-review\"\n  ],\n  \"missing\": [],\n  \"added\": [],\n  \"requests\": [\n    {\n      \"reviewId\": \"zto-receipt-review\",\n      \"matches\": true,\n      \"digestMatches\": true,\n      \"encodingMatches\": true,\n      \"accountMatches\": true,\n      \"beforeDigest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n      \"afterDigest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n      \"encodingDifferenceCount\": 0,\n      \"changes\": [],\n      \"propagatedEncodingPaths\": []\n    }\n  ],\n  \"interpretation\": \"accepted means unchanged against the pinned review, not approval of a change\",\n  \"pathScope\": \"domain/message paths are inside parsed typed data; /params/0 is the public account\",\n  \"limits\": \"labels and capture order are caller assertions; no ownership, consent or contract support proven\"\n}\n"
+    }
+  ]
+}

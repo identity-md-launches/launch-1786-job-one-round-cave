@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "pinMatches": true,
+  "expectedPin": "c1f7a3ff0b7cf878d16be782f567b2bf89f88e9b962ed64210eeaeb2cf6d7023",
+  "actualPin": "c1f7a3ff0b7cf878d16be782f567b2bf89f88e9b962ed64210eeaeb2cf6d7023",
+  "pinScheme": "eip712-request-review-pin:v1",
+  "pinTrust": "expected pin must be independently retained after review; not a signature",
+  "accepted": false,
+  "membershipMatches": true,
+  "orderMatches": true,
+  "beforeOrder": [
+    "zto-receipt-review"
+  ],
+  "afterOrder": [
+    "zto-receipt-review"
+  ],
+  "missing": [],
+  "added": [],
+  "requests": [
+    {
+      "reviewId": "zto-receipt-review",
+      "matches": false,
+      "digestMatches": false,
+      "encodingMatches": false,
+      "accountMatches": true,
+      "beforeDigest": "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774",
+      "afterDigest": "0x79447ddb9c4bb1eafebf3333948dda1358cbf12db05f411e98f64b2ea1d64621",
+      "encodingDifferenceCount": 2,
+      "changes": [
+        {
+          "path": "/message/minimumRaw",
+          "reason": "value",
+          "before": "166357571280020680094504",
+          "after": "166357571280020680094505"
+        }
+      ],
+      "propagatedEncodingPaths": [
+        "/message"
+      ]
+    }
+  ],
+  "interpretation": "accepted means unchanged against the pinned review, not approval of a change",
+  "pathScope": "domain/message paths are inside parsed typed data; /params/0 is the public account",
+  "limits": "labels and capture order are caller assertions; no ownership, consent or contract support proven"
+}

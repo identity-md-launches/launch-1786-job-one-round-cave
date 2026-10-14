@@ -1,0 +1,41 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v9.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "sha256": "e2374762123e298605676d27c3ac337a8c9fd6b4f4574414a436dc6762578425"
+  },
+  "preview": {
+    "path": "dist/line-4/29.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 77998,
+    "sha256": "55471f44f1e02c5b8465982860b77df89474895833f6a57d4412a477211586c5"
+  },
+  "ancestorSha256": "d0899d81145c8538c75a3af1d6f3d72bd7ea6285653bd7c9e932fac3508e80ae",
+  "generatedImageSha256": "c4df19497dfb63b5f0cdbd64ee9f6d46bd979bdd71a210145d753456d9a6a151",
+  "changedPixels": 1688,
+  "unchangedPixels": 1570828,
+  "additionBoundsExclusive": [
+    1000,
+    380,
+    1089,
+    502
+  ],
+  "preservation": "Every pixel outside the addition and every deep fissure pixel is identical to the ancestor. All older pigment is outside the addition.",
+  "imageTool": "image_gen.imagegen, referenced inherited wall; retained only generated twig/seed pigment using the inherited image byte codec",
+  "visualReview": "Inspected the final 1254-square PNG and decoded 512-square JPEG. The added irregular charcoal fork and two red ochre seeds sit on vacant rock above the older right-hand branch. Pepe remains recognizable by his wide mouth and heavy-lidded eyes. Counted four fingers and one thumb on each inherited hand; no new hands or handprints. All older marks, warm rough rock, cracks, torchlight, water and framing are preserved. No text, numbers, captions, signature, logo, watermark, border, real person or prohibited symbol observed. No known unmet visual requirement.",
+  "unmetVisualRequirements": [],
+  "limitations": [
+    "Local visual inspection is not independent certification.",
+    "The small worn twig is less distinct in the JPEG thumbnail."
+  ],
+  "imageIterations": "One image-tool generation. First pigment transfer was too faint; final transfer places only the generated motif on a brighter vacant alcove. Rejected transfer trials are not delivered.",
+  "prompt": "Edit the inherited cave painting, preserving its square dimensions, all older marks, rock, cracks, light, water and framing. Add only a small primitive forked charcoal twig and two red ochre seeds on vacant stone. Worn burnt-stick and thumb pigment; retain original Pepe, both five-digit hands and all earlier marks. No text, numbers, captions, signatures, logos, watermarks, frames or new hands. The final preservation pass retains only generated pigment in the documented vacant alcove."
+}

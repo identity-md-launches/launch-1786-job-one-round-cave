@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "checks": [
+    "exact record shape and wall SHA-256",
+    "one new numbered record, all 28 prior JSON records unchanged",
+    "GOAL.md byte-identical",
+    "both wall PNG paths byte-identical, RGB 1254x1254",
+    "JPEG bytes decoded and SOF dimensions 512x512; under 100 KB",
+    "ancestor downloaded and SHA-256 checked independently",
+    "all 1688 changed pixels confined to vacant addition; deep fissures preserved",
+    "all source-copy provenance hashes match",
+    "only allowed deliverable paths; no added symlinks or oversize source files",
+    "required wall outputs untracked"
+  ],
+  "wallSha256": "e2374762123e298605676d27c3ac337a8c9fd6b4f4574414a436dc6762578425",
+  "changedPixels": 1688,
+  "unchangedPixels": 1570828,
+  "previewBytes": 77998,
+  "modifiedTrackedFiles": [
+    "line-4/README.md",
+    "line-4/USED.md"
+  ],
+  "newDeliverableFiles": [
+    "dist/line-4/29.jpg",
+    "dist/line-4/29.json",
+    "line-4/check-results-29.json",
+    "line-4/finish_wall_29.py",
+    "line-4/round-29.md",
+    "line-4/tools/review-changes/README.md",
+    "line-4/tools/review-changes/example-change.json",
+    "line-4/tools/review-changes/example-match.json",
+    "line-4/tools/review-changes/provenance.json",
+    "line-4/tools/review-changes/request_compare.py",
+    "line-4/tools/review-changes/request_set_check.py",
+    "line-4/tools/review-changes/review_changes.py",
+    "line-4/tools/review-changes/review_pin.py",
+    "line-4/tools/review-changes/rpc_request_check.py",
+    "line-4/tools/review-changes/test_review_changes.py",
+    "line-4/tools/review-changes/typed_digest.py",
+    "line-4/tools/review-changes/typed_trace.py",
+    "line-4/tools/review-changes/zto-one-unit-change.json",
+    "line-4/tools/review-changes/zto-set.json",
+    "line-4/tools/review-changes/zto.pin",
+    "line-4/wall-review-29.json"
+  ],
+  "authority": "Local structural and behavioral checks only; not independent certification."
+}

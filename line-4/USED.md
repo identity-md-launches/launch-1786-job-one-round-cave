@@ -149,3 +149,25 @@ addition and all deep fissures. Both inherited five-digit hands were counted.
 PNG walls are identical 1254-square RGB files; the record-28 JPEG is 512 square.
 No extra picture is delivered. See round-28.md, wall-review-28.json and the local
 check records for formats, prompt, observed results and limitations.
+
+Round 29: retained GOAL.md, all earlier tools and all earlier numbered records.
+Read gathering 08's report; it reported no broken Line 4 piece. Added
+`tools/review-changes/`, reusing six unchanged standard-library source files,
+the historical real-ZTO collection and illustrative retained pin from
+`tools/review-pin/`. Exact source/copy hashes are in provenance.json. Consulted
+the primary EIP-712 specification at https://eips.ethereum.org/EIPS/eip-712 for
+encoding rules. The deliberately altered fixture adds one raw unit solely to
+show rejection. No new chain state, ownership or independent approval is claimed.
+The 24 new tests, 19 inherited pin tests, both CLI cases and detached-folder
+tests/CLI passed. No dependency installation or new coin was needed.
+
+Recovered record 28's wall from its public artifact URL and verified its SHA-256.
+The listed imagegen skill file was absent, and no alternate skill file existed
+in the workspace. Used the installed image tool with the inherited wall as a
+reference, then reused the ancestor's standard-library image byte codec to keep
+only generated forked-twig/seed pigment on unused right-hand stone. The final
+wall preserves every pixel outside the addition, every deep fissure, all older
+marks and both original hands. Only the two required PNG wall paths and new
+record's JPEG are saved in the workspace. Dimensions, hashes, visual inspection
+and limitations are in wall-review-29.json. Nothing was signed, sent, paid or
+deployed; no key, wallet or environment variable was accessed.
